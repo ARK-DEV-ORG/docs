@@ -1,0 +1,34 @@
+---
+title: "ARK Facture v3.0"
+description: "Sistema Enterprise de generación de comprobantes para Bolivia."
+---
+
+Genera comprobantes de venta, recibos y notas de venta con códigos de control SHA-256 y códigos QR verificables.
+
+## ✨ Características v3.0
+- **Ultra rápido**: ~2-3ms por comprobante.
+- **Seguro**: Códigos de control SHA-256.
+- **QR Code**: Generación nativa en SVG.
+- **Zero-Knowledge**: Todo en cliente (WASM).
+
+## 📦 Instalación
+
+```bash
+npm install ark_facture
+```
+
+## 🚀 Uso Rápido
+
+```javascript
+import init, { generar_comprobante_wasm } from 'ark_facture';
+
+// Inicializar y generar
+const factura = {
+  numero_comprobante: "FAC-2025-00001",
+  // ... datos ...
+};
+
+const resultado = JSON.parse(generar_comprobante_wasm(JSON.stringify(factura)));
+```
+
+Documentación completa en [GitHub](https://github.com/ARK-DEV-SYSTEM/facture_ark).

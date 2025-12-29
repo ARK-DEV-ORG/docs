@@ -1,0 +1,58 @@
+---
+title: "Quantum Ark 🔐"
+description: "Librería WebAssembly de alto rendimiento para hashing criptográfico de nivel empresarial."
+---
+
+![Version](https://img.shields.io/npm/v/quantum_ark) ![License](https://img.shields.io/npm/l/quantum_ark) ![Downloads](https://img.shields.io/npm/dw/quantum_ark)
+
+**Quantum Ark** es una librería WebAssembly...
+
+## 🛡️ Características de Seguridad
+
+### Seguridad Post-Cuántica
+- **Resistencia Cuántica**: Primitivas basadas en *lattice-based cryptography*.
+- **Sistema de Difusión Avanzado**: Arquitectura no-lineal.
+- **PBKDF2 Extendido**: 80,000-150,000 iteraciones.
+
+### Arquitectura Segura
+- **Zero-Knowledge**: No expone información de claves.
+- **Determinismo Criptográfico**.
+
+## 📦 Instalación
+
+```bash
+npm install quantum_ark
+```
+
+## 🚀 Uso Básico
+
+### JavaScript/TypeScript
+
+```javascript
+import init, { 
+  quantum_ark_hash,
+  quantum_ark_hash_with_hmac,
+  quantum_ark_verify 
+} from 'quantum_ark';
+
+import wasmUrl from "quantum_ark/quantum_ark_bg.wasm?url";
+
+async function setupQuantumArk() {
+  await init(); // o await init(wasmUrl) en Vite
+  
+  const password = "mi_password_seguro_2025";
+  const appKey = "mi_clave_aplicacion_secreta_unica";
+  
+  // Hash con HMAC
+  const hashHMAC = quantum_ark_hash_with_hmac(password, appKey);
+  console.log('Hash HMAC:', hashHMAC);
+}
+```
+
+## 🔧 Referencia API
+
+- `quantum_ark_hash(password, key)`: Hash estándar.
+- `quantum_ark_hash_with_hmac(password, key)`: Hash máxima seguridad.
+- `quantum_ark_verify(password, key, storedHash)`: Verificación segura.
+
+Más detalles en el [Repositorio GitHub](https://github.com/Jhoel777ar/Quantum_Ark_Encrypt).

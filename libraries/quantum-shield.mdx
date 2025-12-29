@@ -1,0 +1,40 @@
+---
+title: "QuantumShield Bidirectional"
+description: "Librería de encriptación bidireccional de grado militar."
+---
+
+**QuantumShield Ark Bidirectional** es una librería WebAssembly de alta seguridad para encriptación y desencriptación bidireccional.
+
+## 🚀 Características
+- **Dos Modos**: Standard (rápido) y PRO (máxima seguridad).
+- **WebAssembly**: Binario ligero (~400 KB).
+- **Zero-Knowledge**: El desarrollador NO conoce las claves.
+
+## 📥 Instalación
+
+```bash
+npm i quantumshield_ark_bidirectional
+```
+
+### Configuración WASM
+```javascript
+import wasmUrl from "quantumshield_ark_bidirectional/quantumshield_bg.wasm?url";
+import init from 'quantumshield_ark_bidirectional';
+await init(wasmUrl);
+```
+
+## 💻 Uso
+
+### Ejemplo: Modo PRO
+
+```javascript
+import init, { wasm_generate_keypair, wasm_encrypt_pro, wasm_decrypt } 
+  from 'quantumshield_ark_bidirectional';
+
+async function modoPRO() {
+  await init(wasmUrl);
+  // Genera claves y encripta...
+}
+```
+
+Ver ejemplos completos en [GitHub](https://github.com/Jhoel777ar/quantumshield_ark_encrypt).

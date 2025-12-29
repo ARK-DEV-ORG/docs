@@ -1,0 +1,33 @@
+---
+title: "ARK CLEAN v3.2"
+description: "Limpiador de metadatos ultrarrápido con detección de amenazas."
+---
+
+**ARK CLEAN** es un sanitizador de archivos con enfoque en privacidad. Elimina metadatos, detecta amenazas y verifica integridad.
+
+## Características
+- **Soporte Office**: DOCX, XLSX, PPTX.
+- **Seguridad**: Análisis de entropía mejorado.
+- **Privacidad**: Zero-Knowledge Architecture.
+
+## Instalación
+
+```bash
+npm install ark_clean
+```
+
+## Uso en Navegador
+
+```html
+<script type="module">
+  import init, { WasmFileProcessor } from './node_modules/ark_clean/ark_clean.js';
+  
+  async function boot() {
+    await init();
+    const processor = new WasmFileProcessor();
+    // Procesar archivos...
+  }
+</script>
+```
+
+Más info en [GitHub](https://github.com/ARK-SECURE/ark_clean).
