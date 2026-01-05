@@ -8,15 +8,26 @@
     "dark": "#0F766E"
   },
   "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "dark"
+  },
+  "description": "Documentación Oficial de ARK DEV - Soluciones Enterprise, IA, Ciberseguridad y ARK OS Lite.",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guías",
+        "tab": "General",
         "groups": [
           {
             "group": "Introducción",
             "pages": [
               "index"
+            ]
+          },
+          {
+            "group": "Compañía",
+            "pages": [
+              "company/about",
+              "company/cv"
             ]
           },
           {
@@ -81,14 +92,15 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Empezar",
+      "label": "Ir a ARK DEV",
       "href": "https://www.ark-dev.org"
     }
   },
   "footer": {
     "socials": {
       "github": "https://github.com/ark-dev-org",
-      "website": "https://www.ark-dev.org"
+      "website": "https://www.ark-dev.org",
+      "linkedin": "https://www.linkedin.com/in/joel-andres-c"
     }
   }
 }
