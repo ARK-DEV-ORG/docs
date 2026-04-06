@@ -1,17 +1,52 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "sequoia",
   "name": "ARK DEV DOCS",
   "colors": {
-    "primary": "#0D9488",
-    "light": "#2DD4BF",
-    "dark": "#0F766E"
+    "primary": "#0EA5A8",
+    "light": "#7CFFE4",
+    "dark": "#0B3F3A"
   },
   "favicon": "/favicon.svg",
   "appearance": {
-    "default": "dark"
+    "default": "dark",
+    "strict": true
   },
-  "description": "Documentación Oficial de ARK DEV - Soluciones Enterprise, IA, Ciberseguridad y ARK OS Lite.",
+  "description": "Documentación oficial de ARK DEV (https://www.ark-dev.org). Consultora tecnológica enterprise con operaciones en Chile y Bolivia: software, IA, ciberseguridad y hardware/IoT para organizaciones públicas y privadas.",
+  "seo": {
+    "indexing": "all",
+    "metatags": {
+      "canonical": "https://docs.ark-dev.org",
+      "og:site_name": "ARK DEV Docs",
+      "og:locale": "es_LA",
+      "keywords": "ARK DEV, consultora tecnológica, software enterprise, ciberseguridad, inteligencia artificial, hardware, IoT, DevOps, cloud",
+      "og:image": "https://docs.ark-dev.org/images/hero-dark.png",
+      "og:image:alt": "ARK DEV Docs",
+      "twitter:card": "summary_large_image",
+      "twitter:image": "https://docs.ark-dev.org/images/hero-dark.png",
+      "twitter:image:alt": "ARK DEV Docs"
+    }
+  },
+  "search": {
+    "prompt": "Buscar en la documentación..."
+  },
+  "fonts": {
+    "heading": {
+      "family": "Sora"
+    },
+    "body": {
+      "family": "Inter"
+    }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "background": {
+    "decoration": "gradient"
+  },
+  "styling": {
+    "codeblocks": "dark"
+  },
   "navigation": {
     "tabs": [
       {
@@ -27,7 +62,10 @@
             "group": "Compañía",
             "pages": [
               "company/about",
-              "company/cv"
+              "company/cv",
+              "company/standards",
+              "company/brands",
+              "company/contact"
             ]
           },
           {
@@ -38,10 +76,18 @@
             ]
           },
           {
+            "group": "ARK DEV System",
+            "pages": [
+              "services/system",
+              "services/ai",
+              "services/infrastructure",
+              "services/stack"
+            ]
+          },
+          {
             "group": "Servicios",
             "pages": [
               "services/secure",
-              "services/system",
               "services/bio"
             ]
           },
@@ -51,7 +97,8 @@
               "libraries/quantum-ark",
               "libraries/quantum-shield",
               "libraries/ark-facture",
-              "libraries/ark-clean"
+              "libraries/ark-clean",
+              "libraries/arkstock"
             ]
           },
           {
@@ -80,14 +127,18 @@
     }
   },
   "logo": {
-    "light": "/logo/logo.png",
-    "dark": "/logo/logo.png"
+    "light": "/favicon.svg",
+    "dark": "/favicon.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Contacto",
         "href": "mailto:info@ark-dev.org"
+      },
+      {
+        "label": "Agendar",
+        "href": "https://cal.com/ark-dev"
       }
     ],
     "primary": {
