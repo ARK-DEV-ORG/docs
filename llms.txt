@@ -1,0 +1,21 @@
+# ARK DEV Docs
+
+Documentación oficial de ARK DEV con foco en software enterprise, IA, ciberseguridad e infraestructura.
+
+## Sitio
+https://docs.ark-dev.org/
+
+## Páginas principales
+- https://docs.ark-dev.org/
+- https://docs.ark-dev.org/services/system
+- https://docs.ark-dev.org/services/ai
+- https://docs.ark-dev.org/services/infrastructure
+- https://docs.ark-dev.org/services/stack
+- https://docs.ark-dev.org/products/ark-os-lite
+- https://docs.ark-dev.org/products/solutions
+- https://docs.ark-dev.org/company/about
+- https://docs.ark-dev.org/company/standards
+- https://docs.ark-dev.org/support/general
+
+## Contacto
+https://www.ark-dev.org
