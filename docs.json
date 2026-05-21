@@ -12,17 +12,23 @@
     "default": "dark",
     "strict": true
   },
-  "description": "Documentación oficial de ARK DEV (https://www.ark-dev.org). Consultora tecnológica enterprise con operaciones en Chile y Bolivia: software, IA, ciberseguridad y hardware/IoT para organizaciones públicas y privadas.",
+  "description": "Documentación oficial de ARK DEV. Consultora tecnológica enterprise en Latinoamérica: software, IA multi-modelo, Oracle Cloud, ecosistema Google, ciberseguridad, infraestructura cloud y hardware/IoT.",
   "seo": {
     "indexing": "all",
     "metatags": {
       "canonical": "https://docs.ark-dev.org",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "bingbot": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "og:site_name": "ARK DEV Docs",
+      "og:type": "website",
+      "og:title": "ARK DEV Docs | Documentación Técnica Enterprise",
       "og:locale": "es_LA",
-      "keywords": "ARK DEV, consultora tecnológica, software enterprise, ciberseguridad, inteligencia artificial, hardware, IoT, DevOps, cloud",
+      "keywords": "ARK DEV, consultora tecnológica, software enterprise, Oracle Cloud, Google ecosystem, Universal Cart, IA multi-modelo, Anthropic, OpenAI, xAI Grok, Gemma 4, ciberseguridad, DevOps, cloud, infraestructura VPS, documentación técnica",
       "og:image": "https://docs.ark-dev.org/images/hero-dark.png",
       "og:image:alt": "ARK DEV Docs",
       "twitter:card": "summary_large_image",
+      "twitter:title": "ARK DEV Docs | Documentación Técnica Enterprise",
       "twitter:image": "https://docs.ark-dev.org/images/hero-dark.png",
       "twitter:image:alt": "ARK DEV Docs"
     }
@@ -85,6 +91,16 @@
             ]
           },
           {
+            "group": "Integraciones Avanzadas",
+            "pages": [
+              "services/oracle-cloud",
+              "services/google-ecosystem-2026",
+              "services/roadmap-google",
+              "services/model-hub",
+              "services/ark-cloud"
+            ]
+          },
+          {
             "group": "Servicios",
             "pages": [
               "services/secure",
@@ -133,8 +149,16 @@
   "navbar": {
     "links": [
       {
-        "label": "Contacto",
+        "label": "General",
         "href": "mailto:info@ark-dev.org"
+      },
+      {
+        "label": "Ventas",
+        "href": "mailto:sales@ark-dev.org"
+      },
+      {
+        "label": "Soporte",
+        "href": "mailto:support@ark-dev.org"
       },
       {
         "label": "Agendar",
